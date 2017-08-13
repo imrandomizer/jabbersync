@@ -15,7 +15,7 @@ persistent= 0
 
 def locateDB():
 	if os.path.isfile('./database/app.config'):
-		file = open("./database/app.config","r")
+		file = open("./database/app.config","r" )
 		strs = file.read().split("\n")
 		if(len(strs)<1):
 			print("app.config file is empty, please delete this file from present directory. Jabber sync search cannot work")
